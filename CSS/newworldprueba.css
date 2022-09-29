@@ -1,11 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    
 }
 
-.container {
+
+
+.principal {
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -19,171 +22,198 @@
         "noti noti noti aside"
         "news news news aside"
         "footer footer footer footer";
-
-}
-
-.nav {
-    grid-area: nav;
-    display: flex;
-    align-items: center;
-    background: linear-gradient(to left, blue, white)
-}
-
-.nav img {
-    display: flex;
-    height: 250px;
-    width: 250px;
-    border-radius: 70px;
-
 }
 
 
-.nav h1 {
-    padding: 50px;
-    align-items: center;
-    font-family: 'Permanent Marker', cursive;
-    font-weight: 50px bold;
-    font-size: 100px;
-    color: black;
-
-}
-
-
-.nav ul li {
-    list-style: none;
-    margin-left: 75px;
-    padding: 25px 0;
-    float: left;
-
-
-}
-
-.nav ul li a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-
-}
-
-.nav li:hover {
-    background-color: darksalmon;
-    transform: scale(1.2);
-    transition: 0.5s;
-}
-
-.banner {
-    grid-area: ban;
-}
-
-.nov {
-    grid-area: nov;
-    text-align: center;
-    background: linear-gradient(to left, blue, white)
-}
-
-.nov a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
-
-.contenido {
-    grid-area: contenido;
-    background-color: #23699c;
-    padding: 80px;
-    gap: 20px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-start;
-    align-content: center;
-}
-
-
-.contenido p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    font-weight: bold;
-    text-align: center;
-}
-
-.noti {
-    grid-area: noti;
-    background: linear-gradient(to left, #e15727, white);
-    text-align: center;
-
-}
-
-.news {
-    grid-area: news;
-    background-color: #e15727;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items:center;
-    align-content: center;
-}
-
-.news h3 {
-    text-align: center;
-}
-
-.news img {
-    float: none;
-    
-}
-
-.news a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
-.news p {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    text-align: center;
-}
-
-
-.aside {
-    grid-area: aside;
-    background: linear-gradient(to bottom, #23699c, #e15727);
-    display: flex;
-    flex-direction: column;
-    gap: 80px;
-}
-
-.footer {
-    grid-area: footer;
-    display: flex;
-    flex-direction: column;
-    height: 20vh;
-    flex-wrap: nowrap;
-
-}
-
-.footer i {
-    padding: 30px;
-    font-size: 20px;
-    margin-left: 20%;
-    color: azure;
-    background: linear-gradient(to left, blue, white)
-}
-
-.footer i:hover {
-    background-color: darkslategrey;
-    transform: scale(1.3);
-    transition: 0.5s;
-}
-
-@media (max-width: 460px) {
-    .footer i {
-        margin-left: 10%;
-        width: 15vw;
-        padding: 3vh;
+    .nav {
+        grid-area: nav;
+        display: flex;
+        align-items: center;
+        background: linear-gradient(to left, blue, white)
     }
-}
+
+    .nav img {
+        display: flex;
+        height: 250px;
+        width: 250px;
+        border-radius: 70px;
+        margin: 80px; 
+
+    }
+
+
+    .nav h1 {
+        margin: 3%;
+        padding: 50px;
+        align-items: center;
+        font-family: 'Permanent Marker', cursive;
+        font-weight: 50px bold;
+        font-size: 60px;
+        color: black;
+
+    }
+
+
+    .nav ul li {
+        list-style: none;
+        margin-left: 75px;
+        padding: 25px 0;
+        float: left;
+
+
+    }
+
+    .nav ul li a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+
+    }
+
+    .nav li:hover {
+        background-color: darksalmon;
+        transform: scale(1.2);
+        transition: 0.5s;
+    }
+
+    .banner {
+        grid-area: ban;
+        
+    }
+
+    .nov {
+        grid-area: nov;
+        text-align: center;
+        background: linear-gradient(to left, red, white)
+    }
+
+    .nov a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+
+
+    .contenido {
+        grid-area: contenido;
+        background-color: #23699c;
+        padding: 80px;
+        gap: 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        align-content: center;
+    }
+
+
+    .contenido p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .noti {
+        grid-area: noti;
+        background: linear-gradient(to left, #e15727, white);
+        text-align: center;
+
+    }
+
+    .news {
+        grid-area: news;
+        background-color: #e15727;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+    }
+
+    .news h3 {
+        text-align: center;
+    }
+
+    .news img {
+        float: none;
+
+    }
+
+    .news a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+
+    .news p {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        text-align: center;
+    }
+
+
+    .aside {
+        grid-area: aside;
+        background-color: #23699c;
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        
+    }
+
+    .footer {
+        grid-area: footer;
+        display: flex;
+        flex-direction: column;
+        height: 20vh;
+        flex-wrap: nowrap;
+        
+    }
+
+    .footer i {
+        padding: 30px;
+        font-size: 20px;
+        margin-left: 20%;
+        color: azure;
+        background: linear-gradient(to left, blue, white)
+    }
+
+    .footer i:hover {
+        background-color: darkslategrey;
+        transform: scale(1.3);
+        transition: 0.5s;
+    }
+
+    @media (max-width:576px){
+        .principal{
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas: 
+                "nav"
+                "ban"
+                "nov"
+                "contenido"
+                "noti"
+                "news"
+                "aside"
+                "footer";
+        }
+    }
+
+    @media (max-width: 576px) {
+        .footer i {
+            margin-left: 30%;
+            width: 70vw;
+            padding: 3vh;
+        }
+    }
+
+    @media (max-width 576px){
+        .aside {
+            height: 480px;
+        }
+    }
+
